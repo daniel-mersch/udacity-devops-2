@@ -106,4 +106,4 @@ Python 3.7 is the minimum supported version.
 
 ## Demo 
 
-[Screencast on Youtube](https://www.youtube.com/watch?v=lG45CVhLU9o)
+[Screencast on Youtube](https://youtu.be/LnYr1sgw_dU)
