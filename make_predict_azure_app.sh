@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PORT=443
+WEBAPP_URL=udacity-devops-2.azurewebsites.net
 echo "Port: $PORT"
 
 # POST method predict
@@ -25,4 +26,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://udacity-devops-2.azurewebsites.net:$PORT/predict
+     -X POST https://$WEBAPP_URL/predict
