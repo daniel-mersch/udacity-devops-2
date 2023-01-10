@@ -47,8 +47,7 @@ To run a python app in CloudShell we have to first install a virtual environment
 make all
 ```
 
-![make all 1/2](screenshots/20230105_screenshot_make_all_1.png)
-![make all 1/2](screenshots/20230105_screenshot_make_all_2.png)
+![make all](screenshots/20230110_Azure_CloudShell_make_all.png)
 
 ### Output of a test run
 
