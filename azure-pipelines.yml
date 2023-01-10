@@ -51,7 +51,7 @@ stages:
       displayName: 'Archive files'
       inputs:
         rootFolderOrFile: '$(projectRoot)'
-        includeRootFolder: false
+        includeRootFolder: false        
         archiveType: zip
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
         replaceExistingArchive: true
@@ -83,5 +83,6 @@ stages:
             displayName: 'Deploy Azure Web App : udacity-devops-2'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
+              appType: 'WebApp'
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
