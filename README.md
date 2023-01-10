@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/daniel-mersch/udacity-devops-2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/daniel-mersch/udacity-devops-2/actions/workflows/pythonapp.yml)
+
 # Overview
 
 The goal of this project is to demonstrate the usage of a CI/CD pipeline for an Azure deployment, demonstrating code testing and automation. For a working demo we use the application `flask-sklearn`.
