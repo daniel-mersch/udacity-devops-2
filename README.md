@@ -95,7 +95,7 @@ Last step is to verify, that our Webapp is running like expected. Therefore we t
 
 ## Enhancements
 
-For the future we should update the application to a current python version. The used version 3.5 is no longer supported by Azure Webapp, therefore we need to update the requirements.
+For the future we should update the application to a current python version. The used version 3.5 is no longer supported, neither by Github Actions nor by Azure AppService, therefore we need to update the requirements.
 
 ### Python error
 
