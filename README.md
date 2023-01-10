@@ -23,7 +23,7 @@ First step is to create a resource group in Azure for our resources. I named it 
 
 ### Project running on Azure App Service
 
-Next step is the creation of a Azure AppService. The CD pipeline will deploy the python application (`flask-sklearn`) into this AppService.
+Next step is the creation of an Azure AppService. The CD pipeline will deploy the python application (`flask-sklearn`) into this AppService. I named it `udacity-devops-2`.
 
 ![Azure Webapp](screenshots/20230105_screenshot_Azure_Webapp.png)
 
@@ -39,9 +39,9 @@ cd udacity-devops-2
 
 ![Repository cloned](screenshots/20230105_screenshot_repo_cloned.png)
 
-### Passing tests that are displayed after running the `make all` command from the `Makefile`
+### Preparations    
 
-To run a python app in CloudShell we have to first install a virtual environment and install all depenfdencies. This is done by executing our Makefile.
+To run a python app in CloudShell we have to first install a virtual environment and all dependencies. This is done by executing our Makefile.
 
 ```bash
 make all
@@ -62,25 +62,29 @@ make test
 
 ### Successful deploy of the project in Azure Pipelines.
 
-With each push to the Github repo the CI pipeline runs and the the CD pipeline deploys our application to Azure. This runs automatically.
+With each push to the Github repo the CI pipeline runs.
+
+![Github Action](screenshots/20230110_Github_Action.png)
+
+A successful run of the CI pipeline triggers a run of the CD pipeline in Azure.
 
 ![Webapp Deployment](screenshots/20230110_Azure_Pipeline_WebApp_Deployment.png)
 
 ### Running Azure App Service from Azure Pipelines automatic deployment
 
-The Webapp can be accessed via webbrowser: `https://udacity-devops-2.azurewebsites.net/`
+The Webapp can be accessed via webbrowser: [https://udacity-devops-2.azurewebsites.net/](https://udacity-devops-2.azurewebsites.net/)
 
 ![Azure Webapp](screenshots/20230105_Azure_Webapp_running.png)
 
 ### Successful prediction from deployed flask app in Azure Cloud Shell. 
 
-We have a little shell script called `make_predict_azure_app.sh`, which makes test call top our WebApp.
+We have a little shell script called `make_predict_azure_app.sh`, which makes a test call to our WebApp.
 
 ```bash
 ./make_predict_azure_app.sh
 ```
 
-![Running Prediction](screenshots/20230110_Running_Prediction_on_Appservice.png)
+![Output running Prediction](screenshots/20230110_Running_Prediction_on_Appservice.png)
 
 ### Output of streamed log files from deployed application
 
@@ -91,7 +95,7 @@ Last step is to verify, that our Webapp is running like expected. Therefore we t
 
 ## Enhancements
 
-For the future we should update the application to a current python version. The used version 3.5 is no longer supported by Azure Webapp.
+For the future we should update the application to a current python version. The used version 3.5 is no longer supported by Azure Webapp, therefore we need to update the requirements.
 
 ### Python error
 
